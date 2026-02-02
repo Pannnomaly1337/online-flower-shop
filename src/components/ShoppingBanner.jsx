@@ -10,7 +10,7 @@ export default function ShoppingBanner()
                         <p className="py-5 text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum obcaecati sint pariatur, placeat blanditiis ullam!</p>
                         <a href="#" className="w-fit px-10 py-4 text-white text-xl bg-(--main-dark) hover:bg-(--hover-color) transition duration-300 ease-in-out">Shop Now</a>
                     </div>
-                    <div className="flex justify-center h-[400px]">
+                    <div className="flex justify-center h-[400px] ml-60">
                         <img src="shoes-bag.png" alt="shop banner" className="h-full object-contain object-center" />
                     </div>
                 </div>

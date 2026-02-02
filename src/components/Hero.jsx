@@ -8,7 +8,7 @@ export default function Hero ()
                 <div><p className="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos deleniti illo vero ducimus quis et temporibus ipsa itaque repudiandae error.</p></div>
                 <div><a href="#" className="px-10 py-4 text-white text-xl bg-(--main-dark) hover:bg-(--hover-color) transition duration-300 ease-in-out">Shop Now</a></div>
             </div>
-            <div className="w-[60%]">
+            <div className="w-[60%] pl-15">
                 <img src="model.png" alt="flower main" width="900px" />
             </div>
         </div>

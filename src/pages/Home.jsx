@@ -7,7 +7,7 @@ import ShoppingBanner from "../components/ShoppingBanner";
 export default function Home ()
 {
     return (
-        <div id="home">
+        <div id="home" className="font-poppins">
 
             <InnerNavbar />
 

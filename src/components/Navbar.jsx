@@ -20,17 +20,27 @@ export default function Navbar ()
                         <Link to="/"><img src="log2.png" alt="logo" width="300px" /></Link>
                     </li>
                 </div>
-                <div className="flex gap-10">
-                    <div><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 20 20"><path fill="#000000" d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33l-1.42 1.42l-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/></svg></a></div>
+                <div className="flex gap-8">
                     <li>
-                        <Link to="/user"><svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 448 512"><path fill="#000000" d="M304 128a80 80 0 1 0-160 0a80 80 0 1 0 160 0zm-208 0a128 128 0 1 1 256 0a128 128 0 1 1-256 0zM49.3 464h349.4c-8.9-63.3-63.3-112-129-112h-91.4c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4c98.5 0 178.3 79.8 178.3 178.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"/></svg></Link>
+                        <a href="#">
+                            <div className="rounded-[50%] hover:bg-(--opacity-color) p-3 transition duration-300 ease-in-out">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 20 20"><path fill="#000000" d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33l-1.42 1.42l-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/></svg>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <Link to="/user">
+                            <div className="rounded-[50%] hover:bg-(--opacity-color) p-3 transition duration-300 ease-in-out">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 448 512"><path fill="#000000" d="M304 128a80 80 0 1 0-160 0a80 80 0 1 0 160 0zm-208 0a128 128 0 1 1 256 0a128 128 0 1 1-256 0zM49.3 464h349.4c-8.9-63.3-63.3-112-129-112h-91.4c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4c98.5 0 178.3 79.8 178.3 178.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"/></svg>
+                            </div>
+                        </Link>
                     </li>
                     <li>
                         <Link to="/cart">
-                        <div id="cart" className="flex">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24"><path fill="#000000" d="M0 1h4.764l.545 2h18.078l-3.666 11H7.78l-.5 2H22v2H4.72l1.246-4.989L3.236 3H0V1Zm7.764 11h10.515l2.334-7H5.855l1.909 7ZM4 21a2 2 0 1 1 4 0a2 2 0 0 1-4 0Zm14 0a2 2 0 1 1 4 0a2 2 0 0 1-4 0Z"/></svg>
-                            <span id="cart-span" className="text-white">0</span>
-                        </div>
+                            <div id="cart" className="flex rounded-[50%] hover:bg-(--opacity-color) p-3 transition duration-300 ease-in-out">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24"><path fill="#000000" d="M0 1h4.764l.545 2h18.078l-3.666 11H7.78l-.5 2H22v2H4.72l1.246-4.989L3.236 3H0V1Zm7.764 11h10.515l2.334-7H5.855l1.909 7ZM4 21a2 2 0 1 1 4 0a2 2 0 0 1-4 0Zm14 0a2 2 0 1 1 4 0a2 2 0 0 1-4 0Z"/></svg>
+                                <span id="cart-span" className="text-white">0</span>
+                            </div>
                         </Link>
                     </li>
                 </div>
