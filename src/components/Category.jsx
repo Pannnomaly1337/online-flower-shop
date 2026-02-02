@@ -1,7 +1,7 @@
 export default function Category ()
 {
     return (
-        <div id="category" className="bg-white px-10 py-15">
+        <div id="category" className="bg-white px-10 py-20">
             <a href="#" className="flex flex-col justify-center items-center pb-5 hover:text-(--main-dark) transition duration-300 ease-in-out">
                 <div className="bg-(--main-light) rounded-[50%] w-[200px] h-[200px] p-5 hover:opacity-[0.8] transition duration-300 ease-in-out">
                     <img src="c1.png" alt="Annual Flower" className="w-full h-full object-contain object-center" />

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 export default function Navbar ()
 {
     return (
-        <nav id="nav-bar" className="px-20 py-5">
+        <nav id="nav-bar" className="px-20 py-5 mt-5">
             <ul className="flex justify-between items-center">
                 <div>
                     <li>
@@ -17,7 +17,7 @@ export default function Navbar ()
                 </div>
                 <div>
                     <li className="flex items-center">
-                        <Link to="/"><img src="log2.png" alt="logo" width="300px" /></Link>
+                        <Link to="/"><img src="log2.png" alt="logo" width="330px" /></Link>
                     </li>
                 </div>
                 <div className="flex gap-8">
