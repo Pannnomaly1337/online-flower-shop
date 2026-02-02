@@ -1,7 +1,7 @@
 export default function Recent()
 {
     return (
-        <div className="w-full bg-white px-20">
+        <div className="w-full bg-white px-20 pb-10">
             <p className="text-4xl font-bold pb-10">Recent Flowers</p>
             <div id="recent-product">
                 <div className="flex flex-col w-full">
