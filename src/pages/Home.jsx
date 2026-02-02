@@ -4,7 +4,8 @@ import InnerNavbar from "../components/InnerNavbar";
 import Partner from "../components/Partner";
 import Popular from "../components/Popular";
 import Recent from "../components/Recent";
-import ShoppingBanner from "../components/ShoppingBanner";
+import Banner from "../components/Banner";
+import Plants from "../components/Plants";
 
 export default function Home ()
 {
@@ -19,11 +20,13 @@ export default function Home ()
 
             <Popular />
 
-            <ShoppingBanner />
+            <Banner />
 
             <Recent />
 
             <Partner />
+
+            <Plants />
         </div>
     );
 }
