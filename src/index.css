@@ -142,3 +142,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 40px;
 }
+
+#partner {
+    grid-gap: 15px;
+}
