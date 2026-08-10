@@ -1,13 +1,16 @@
 import Category from "../components/Category";
 import Hero from "../components/Hero";
 import InnerNavbar from "../components/InnerNavbar";
+import Partner from "../components/Partner";
 import Popular from "../components/Popular";
-import ShoppingBanner from "../components/ShoppingBanner";
+import Recent from "../components/Recent";
+import Banner from "../components/Banner";
+import Plants from "../components/Plants";
 
 export default function Home ()
 {
     return (
-        <div id="home">
+        <div id="home" className="font-poppins">
 
             <InnerNavbar />
 
@@ -17,7 +20,13 @@ export default function Home ()
 
             <Popular />
 
-            <ShoppingBanner />
+            <Banner />
+
+            <Recent />
+
+            <Partner />
+
+            <Plants />
         </div>
     );
 }
