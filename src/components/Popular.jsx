@@ -4,7 +4,7 @@ import { popularProducts } from "../lib/products";
 export default function Popular ()
 {
     return (
-        <div className="min-h-screen w-full bg-white px-6 sm:px-10 lg:px-20 py-10 lg:py-0">
+        <div id="popular" className="scroll-mt-8 min-h-screen w-full bg-white px-6 sm:px-10 lg:px-20 py-10 lg:py-0">
             <p className="text-3xl sm:text-4xl font-bold">Popular Flowers</p>
             <div id="popular-dress" className="pt-5">
                 <div id="popular-product">
