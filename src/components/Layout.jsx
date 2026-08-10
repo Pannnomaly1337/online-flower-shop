@@ -7,9 +7,13 @@ export default function Layout ()
 {
     return (
         <div>
-            <Navbar />
+            <header id="site-header" className="flex flex-col">
+                <Navbar />
+            </header>
+
             <CartDrawer />
             <SearchOverlay />
+
             <div>
                 <Outlet />
             </div>
