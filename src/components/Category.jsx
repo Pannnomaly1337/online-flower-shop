@@ -10,7 +10,7 @@ const categories = [
 export default function Category ()
 {
     return (
-        <div id="category" className="bg-white px-6 sm:px-10 py-12 lg:py-20">
+        <div id="category" className="scroll-mt-8 bg-white px-6 sm:px-10 py-12 lg:py-20">
             {categories.map((category) => (
                 <a key={category.label} href="#" className="flex flex-col justify-center items-center pb-5 hover:text-(--main-dark) transition duration-300 ease-in-out">
                     <div className="bg-(--main-light) rounded-full w-28 h-28 sm:w-40 sm:h-40 lg:w-[200px] lg:h-[200px] p-4 sm:p-5 hover:opacity-[0.8] transition duration-300 ease-in-out">
