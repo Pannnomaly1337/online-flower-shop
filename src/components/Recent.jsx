@@ -1,8 +1,8 @@
 export default function Recent()
 {
     return (
-        <div className="w-full bg-white px-20 pb-10">
-            <p className="text-4xl font-bold pb-10">Recent Flowers</p>
+        <div className="w-full bg-white px-6 sm:px-10 lg:px-20 pb-10">
+            <p className="text-3xl sm:text-4xl font-bold pb-10">Recent Flowers</p>
             <div id="recent-product">
                 <div className="flex flex-col w-full">
                     <a href="#" className="w-full h-full bg-(--product-bg-color) p-5 rounded-md relative">
