@@ -4,6 +4,8 @@ import Home from "./pages/Home";
 import User from "./pages/User";
 import Cart from "./pages/Cart";
 import Error from "./pages/Error";
+import { CartProvider } from "./context/CartContext";
+import { SearchProvider } from "./context/SearchContext";
 
 const router = createBrowserRouter ([
 {
@@ -21,6 +23,10 @@ const router = createBrowserRouter ([
 export default function App ()
 {
   return (
-    <RouterProvider router={router} />
+    <CartProvider>
+      <SearchProvider>
+        <RouterProvider router={router} />
+      </SearchProvider>
+    </CartProvider>
   );
 }

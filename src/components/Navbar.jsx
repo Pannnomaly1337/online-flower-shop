@@ -1,7 +1,12 @@
 import { Link } from "react-router-dom"
+import { useCart } from "../context/CartContext";
+import { useSearch } from "../context/SearchContext";
 
 export default function Navbar ()
 {
+    const { count, openCart } = useCart();
+    const { openSearch } = useSearch();
+
     return (
         <nav id="nav-bar" className="px-4 sm:px-8 lg:px-20 py-5 mt-5">
             <ul className="flex justify-between items-center">
@@ -22,11 +27,11 @@ export default function Navbar ()
                 </div>
                 <div className="flex items-center gap-2 sm:gap-5 lg:gap-8">
                     <li>
-                        <a href="#">
-                            <div className="rounded-[50%] hover:bg-(--opacity-color) p-2 sm:p-3 transition duration-300 ease-in-out">
+                        <button type="button" onClick={openSearch} aria-label="Open search">
+                            <div className="rounded-[50%] hover:bg-(--opacity-color) p-2 sm:p-3 transition duration-300 ease-in-out cursor-pointer">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 20 20"><path fill="#000000" d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33l-1.42 1.42l-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/></svg>
                             </div>
-                        </a>
+                        </button>
                     </li>
                     <li>
                         <Link to="/user">
@@ -36,12 +41,12 @@ export default function Navbar ()
                         </Link>
                     </li>
                     <li>
-                        <Link to="/cart">
-                            <div id="cart" className="flex rounded-[50%] hover:bg-(--opacity-color) p-2 sm:p-3 transition duration-300 ease-in-out">
+                        <button type="button" onClick={openCart} aria-label="Open cart">
+                            <div id="cart" className="flex rounded-[50%] hover:bg-(--opacity-color) p-2 sm:p-3 transition duration-300 ease-in-out cursor-pointer">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24"><path fill="#000000" d="M0 1h4.764l.545 2h18.078l-3.666 11H7.78l-.5 2H22v2H4.72l1.246-4.989L3.236 3H0V1Zm7.764 11h10.515l2.334-7H5.855l1.909 7ZM4 21a2 2 0 1 1 4 0a2 2 0 0 1-4 0Zm14 0a2 2 0 1 1 4 0a2 2 0 0 1-4 0Z"/></svg>
-                                <span id="cart-span" className="text-white">0</span>
+                                {count > 0 && <span id="cart-span" className="text-white">{count}</span>}
                             </div>
-                        </Link>
+                        </button>
                     </li>
                 </div>
             </ul>
