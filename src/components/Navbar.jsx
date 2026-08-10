@@ -22,7 +22,7 @@ export default function Navbar ()
                 </div>
                 <div className="hidden lg:block">
                     <li className="flex items-center">
-                        <Link to="/"><img src="log2.png" alt="logo" className="w-[240px] xl:w-[330px]" /></Link>
+                        <a href="#"><img src="log2.png" alt="logo" className="w-[240px] xl:w-[330px]" /></a>
                     </li>
                 </div>
                 <div className="flex items-center gap-2 sm:gap-5 lg:gap-8">
