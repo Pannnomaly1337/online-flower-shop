@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import User from "./pages/User";
 import Cart from "./pages/Cart";
 import Error from "./pages/Error";
+import { CartProvider } from "./context/CartContext";
 
 const router = createBrowserRouter ([
 {
@@ -21,6 +22,8 @@ const router = createBrowserRouter ([
 export default function App ()
 {
   return (
-    <RouterProvider router={router} />
+    <CartProvider>
+      <RouterProvider router={router} />
+    </CartProvider>
   );
 }
